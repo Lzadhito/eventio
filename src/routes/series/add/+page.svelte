@@ -8,7 +8,8 @@
 		modalStore.trigger({
 			type: 'component',
 			component: {
-				ref: AddEventModal
+				ref: AddEventModal,
+				props: { onSubmit: (data, e) => console.log({ data, e }) }
 			}
 		});
 	}
