@@ -59,6 +59,9 @@ devDependencies:
   svelte-check:
     specifier: ^3.0.1
     version: 3.5.0(postcss@8.4.28)(svelte@3.59.2)
+  sveltekit-superforms:
+    specifier: ^1.6.1
+    version: 1.6.1(@sveltejs/kit@1.22.6)(svelte@3.59.2)(zod@3.22.2)
   tailwindcss:
     specifier: ^3.3.3
     version: 3.3.3
@@ -74,6 +77,9 @@ devDependencies:
   vitest:
     specifier: ^0.25.3
     version: 0.25.8
+  zod:
+    specifier: ^3.22.2
+    version: 3.22.2
 
 packages:
 
@@ -2128,6 +2134,18 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
+  /sveltekit-superforms@1.6.1(@sveltejs/kit@1.22.6)(svelte@3.59.2)(zod@3.22.2):
+    resolution: {integrity: sha512-85whZdnytMFStDY1PI3ycr5BoTb57XjkEJqZ2Mt8HT06y/CKlQBws5Cx/AxPxA3WHhGfC26yfXqLYqEQz1oGfw==}
+    peerDependencies:
+      '@sveltejs/kit': 1.x
+      svelte: 3.x || 4.x
+      zod: 3.x
+    dependencies:
+      '@sveltejs/kit': 1.22.6(svelte@3.59.2)(vite@4.4.9)
+      svelte: 3.59.2
+      zod: 3.22.2
+    dev: true
+
   /tailwindcss@3.3.3:
     resolution: {integrity: sha512-A0KgSkef7eE4Mf+nKJ83i75TMyq8HqY3qmFIJSWy8bNt0v1lG7jUcpGpoTFxAwYcWOphcTBLPPJg+bDfhDf52w==}
     engines: {node: '>=14.0.0'}
@@ -2397,4 +2415,8 @@ packages:
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: true
+
+  /zod@3.22.2:
+    resolution: {integrity: sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==}
     dev: true
